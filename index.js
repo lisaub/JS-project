@@ -1,8 +1,8 @@
 // Function called computerPlay that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’.
 
 function computerPlay() {
-	randomReturn = ["Rock", "Paper", "Scissors"];
-	computerSelection = randomReturn[Math.floor(Math.random() * randomReturn.length)].toLowerCase();
+	let randomReturn = ["Rock", "Paper", "Scissors"];
+	let computerSelection = randomReturn[Math.floor(Math.random() * randomReturn.length)].toLowerCase();
     //console.log(computerSelection)
     return computerSelection;
 }
@@ -19,6 +19,7 @@ function playRound(playerSelection, computerSelection) {
     //let playerSelection = prompt('Enter "rock", "paper" or "scissors":');
     playerSelection = playerSelection.toLowerCase();
     //console.log(playerSelection);
+    let result = 0;
 
 	if (playerSelection === "rock" && computerSelection === "rock") {
 		result = `You tie! (${playerSelection} and ${computerSelection}).`;
