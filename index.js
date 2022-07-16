@@ -59,6 +59,7 @@ function game() {
         var element = prompt(`Round ${i+1}: Type Rock, Paper or Scissors.`);
 
         while (element.toLowerCase() !== "rock" && element.toLowerCase() !== "paper" && element.toLowerCase() !== "scissors") {
+            console.log('Please enter a valid element');
             alert("Ooops! That didn't work!");
             element = prompt("Type Rock, Paper or Scissors");
         }
