@@ -16,7 +16,7 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection) {
 
-    //var playerSelection = prompt('Enter "rock", "paper" or "scissors":');
+    //let playerSelection = prompt('Enter "rock", "paper" or "scissors":');
     playerSelection = playerSelection.toLowerCase();
     //console.log(playerSelection);
 
@@ -45,18 +45,18 @@ function playRound(playerSelection, computerSelection) {
 }
 
 //const playerSelection = 'paper';
-//var computerSelection = computerPlay();
+//let computerSelection = computerPlay();
 //console.log(playRound(playerSelection, computerSelection))
 
 // Function game(). Call the playRound function inside of this one to play a 5 round game that keeps score and reports a winner or loser at the end.
 
 function game() {
-    var userPoints = 0;
-    var computerPoints = 0;
-    var winner=0;
+    let userPoints = 0;
+    let computerPoints = 0;
+    let winner=0;
 
     for (let i = 0; i < 5; i++) {
-        var element = prompt(`Round ${i+1}: Type Rock, Paper or Scissors.`);
+        let element = prompt(`Round ${i+1}: Type Rock, Paper or Scissors.`);
 
         while (element.toLowerCase() !== "rock" && element.toLowerCase() !== "paper" && element.toLowerCase() !== "scissors") {
             console.log('Please enter a valid element');
