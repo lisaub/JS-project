@@ -1,0 +1,54 @@
+G I T 
+• Download and install
+https://git-scm.com/downloads
+
+ • Configure Git for the first time
+
+1. Abrir GIT BASH 
+2. git –version 
+3. git config --global user.name “Luli Lilu" 
+4. git config --global user.email “LuliLilu@gmail.com” 
+
+• Commands to check information
+1. git config --list 
+2. git config user.name .
+3. git config user.email 
+4. git help config (Abrirá ayuda de Git) 
+5. git diff index.html (antes de guardar con el git add, te muestra los cambios o la diferencias entre el antes y después en el documento)
+6. git restore index.html (si los cambios mostrados arriba no quiero guardarlos y prefiero el estado del commit anterior)
+
+• Create repository: 
+1. Click derecho sobre la carpeta, “Git bash here” 
+2. git init (working directory) - Inicializas git en el proyecto
+3. git status (aparecerán los archivos en rojo) - Aparecen los cambios guardados o no del proyecto
+4. git add index.html (staging area) - Agregas archivo por archivo
+5. git status (aparecerá index.html en verde) 
+6. git add . (agregá todos los archivos) 
+7. git commit -m “creación del index” 
+8. git log (muestra los commit hechos) 
+
+• Branches: 
+1. git branch mi-rama (Creas la rama “mi-rama”)
+2. git branch -l (muestra las ramas existentes) 
+3. git checkout mi-rama (se mueve de rama, de master hacia “mi-rama”) 
+4. git branch -D mi-rama (elimina la rama “mi-rama”) 
+
+• Commiting: 
+1. git commit –m “comentario” 
+2. git checkout 3. git log --oneline (lista los commits) 
+4. git checkout +id commit (vuelve al commit seleccionado) 
+
+• Merge: 
+1. git checkout master (para ubicarnos en la rama master o main) 
+2. git merge nombre rama     Ej: git merge mi-rama
+
+
+
+Upload local rpository to GitHub
+ 
+git remote add origin https://…          👈🏻 (aca iria el link del repositorio)
+git branch -M main           👈🏻 (aca revisen si su rama principal se llama “main” o “master” y sustituir para que coincida y no les cree otra, todo esto antes de tirar ese comando)
+git push -u origin main     👈🏻(al igual que arriba chequear que coincida con su repo local el main o el master (puede variar))
+
+
+

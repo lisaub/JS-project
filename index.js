@@ -1,13 +1,13 @@
 // Function called computerPlay that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’.
 
 function computerPlay() {
-	var randomReturn = ["Rock", "Paper", "Scissors"];
-	var computerSelection = randomReturn[Math.floor(Math.random() * randomReturn.length)].toLowerCase();
+	randomReturn = ["Rock", "Paper", "Scissors"];
+	computerSelection = randomReturn[Math.floor(Math.random() * randomReturn.length)].toLowerCase();
     //console.log(computerSelection)
     return computerSelection;
 }
 
-computerPlay();
+//computerPlay();
 
 // Function playRound that plays a single round of Rock Paper Scissors.
 // Return a string that declares the winner of the round, e.g. "You Lose! Paper beats Rock"
@@ -17,7 +17,7 @@ computerPlay();
 function playRound(playerSelection, computerSelection) {
 
     //var playerSelection = prompt('Enter "rock", "paper" or "scissors":');
-    var playerSelection = playerSelection.toLowerCase();
+    playerSelection = playerSelection.toLowerCase();
     //console.log(playerSelection);
 
 	if (playerSelection === "rock" && computerSelection === "rock") {
