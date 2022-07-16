@@ -56,7 +56,7 @@ function game() {
     var winner=0;
 
     for (let i = 0; i < 5; i++) {
-        var element = prompt("Type Rock, Paper or Scissors");
+        var element = prompt(`Round ${i+1}: Type Rock, Paper or Scissors.`);
 
         while (element.toLowerCase() !== "rock" && element.toLowerCase() !== "paper" && element.toLowerCase() !== "scissors") {
             alert("Ooops! That didn't work!");
@@ -82,7 +82,7 @@ function game() {
             console.log("something strange")
         }  
 
-        console.log(`Round ${i}: user has ${element} and ${userPoints}, computer has ${computerElement} and ${computerPoints}.`)
+        console.log(`Round ${i+1}: user has ${element} and ${userPoints}, computer has ${computerElement} and ${computerPoints}.`)
 	}
 
     if (userPoints>computerPoints) {
