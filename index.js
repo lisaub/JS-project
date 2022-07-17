@@ -90,18 +90,22 @@ function game() {
     if (userPoints>computerPoints) {
         winner= `You win! ${userPoints} : ${computerPoints}`;
         console.log(winner);
+        alert(`You win! ${userPoints} : ${computerPoints}`);
     }
     else if (computerPoints>userPoints) {
         winner= `You loose! ${userPoints} : ${computerPoints}`;
         console.log(winner);
+        alert(`You loose! ${userPoints} : ${computerPoints}`);
     }
     else if (userPoints==computerPoints) {
         winner= `You tie! ${userPoints} : ${computerPoints}`;
         console.log(winner);
+        alert(`You tie! ${userPoints} : ${computerPoints}`);
     }
     else {
         winner="something strange";
         console.log(winner);
+        alert(`something strange... ${userPoints} : ${computerPoints}`);
     }
 }
 
