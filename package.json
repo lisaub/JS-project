@@ -1,7 +1,7 @@
 {
   "name": "js-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://lisaub.github.io/JS-project/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisaub/JS-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lisaub/JS-project/issues"
+  },
+  "homepage": "https://github.com/lisaub/JS-project#readme"
 }
